@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/readme/hero.svg" alt="Rulebook for AI - The Agentic Engineering Standard" width="100%">
+  <img src="assets/readme/hero.svg?v=2" alt="Rulebook for AI - The Agentic Engineering Standard" width="100%">
 </p>
 
 <p align="center">
