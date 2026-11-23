@@ -104,6 +104,7 @@ rulebook-for-ai/
 ├── AGENTS.md                          # Universal agent guidelines (drop-in)
 ├── CLAUDE.md                          # Claude Code workspace standard
 ├── EXAMPLES.md                        # Anti-patterns vs industry best practices
+├── LICENSE                            # MIT open-source license
 ├── plugin.json                        # Universal plugin manifest
 └── README.md                          # Official repository documentation
 ```
