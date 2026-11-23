@@ -1,0 +1,17 @@
+{
+  "name": "rulebook-for-ai",
+  "description": "Universal behavioral guidelines for AI coding agents to eliminate sycophancy, encourage first-principles technical debate, prevent wheel-reinvention, and maintain pristine codebase hygiene.",
+  "version": "1.0.0",
+  "author": {
+    "name": "itsprem404"
+  },
+  "license": "MIT",
+  "keywords": [
+    "guidelines",
+    "best-practices",
+    "coding",
+    "anti-sycophancy",
+    "rulebook"
+  ],
+  "skills": ["./skills/rulebook-for-ai"]
+}

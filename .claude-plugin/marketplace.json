@@ -1,0 +1,30 @@
+{
+  "name": "rulebook-marketplace",
+  "id": "rulebook-marketplace",
+  "owner": {
+    "name": "itsprem404"
+  },
+  "metadata": {
+    "description": "Universal engineering standards and behavioral guidelines for AI coding agents.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "rulebook-for-ai",
+      "source": "./",
+      "description": "Universal behavioral standards: Socratic Sparring, Lego-Block Synthesis, Active Scrap Audit, Sub-Agent Delegation, Temporal Delta Focus, Surgical Execution.",
+      "version": "1.0.0",
+      "author": {
+        "name": "itsprem404"
+      },
+      "keywords": [
+        "guidelines",
+        "best-practices",
+        "coding",
+        "anti-sycophancy",
+        "rulebook"
+      ],
+      "category": "workflow"
+    }
+  ]
+}
