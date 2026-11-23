@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-labelledby="title desc">
+  <title id="title">Rulebook for AI - The Agentic Engineering Standard</title>
+  <desc id="desc">Behavioral guidelines and engineering standards for Claude Code, Cursor, Windsurf, Copilot, and Antigravity agents.</desc>
+  
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14"/>
+      <stop offset="50%" stop-color="#0D1321"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#0B1120"/>
+    </linearGradient>
+
+    <!-- Glow Gradients -->
+    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="emeraldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="indigoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#EF4444" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="standardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6366F1" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="antiBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#991B1B" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <!-- Pattern Grid -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+    /* Animations */
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @keyframes streamDash {
+      to { stroke-dashoffset: -40; }
+    }
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes badgePulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+
+    .pulse-glow { animation: pulseGlow 6s ease-in-out infinite; transform-origin: center; }
+    .stream-line { stroke-dasharray: 6 6; animation: streamDash 1.4s linear infinite; }
+    .cursor { animation: cursorBlink 1s infinite; }
+    .live-dot { animation: badgePulse 2s ease-in-out infinite; }
+    .floating-core { animation: floatSlow 4s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .stream-line, .cursor, .live-dot, .floating-core, .pulse-glow { animation: none !important; }
+    }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="520" rx="16" fill="url(#bgGrad)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <rect width="1200" height="520" rx="16" fill="url(#grid)"/>
+
+  <!-- Ambient Ambient Glows -->
+  <circle cx="200" cy="100" r="220" fill="url(#redGlow)" class="pulse-glow"/>
+  <circle cx="600" cy="270" r="280" fill="url(#indigoGlow)" class="pulse-glow"/>
+  <circle cx="1020" cy="280" r="240" fill="url(#emeraldGlow)" class="pulse-glow"/>
+
+  <!-- ==================== TOP HEADER ==================== -->
+  <g class="font-sans" text-anchor="middle">
+    <!-- Category Pill Badge -->
+    <rect x="445" y="32" width="310" height="28" rx="14" fill="rgba(99, 102, 241, 0.12)" stroke="rgba(99, 102, 241, 0.4)" stroke-width="1"/>
+    <circle cx="462" cy="46" r="4" fill="#6366F1" class="live-dot"/>
+    <text x="605" y="51" fill="#C7D2FE" font-size="11.5" font-weight="700" letter-spacing="1.2">THE AGENTIC ENGINEERING STANDARD</text>
+
+    <!-- Main Title -->
+    <text x="600" y="98" fill="#FFFFFF" font-size="36" font-weight="800" letter-spacing="-0.8">RULEBOOK FOR AI</text>
+    
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="126" fill="#94A3B8" font-size="14.5" font-weight="400">
+      Stop AI agents from writing 1,200 lines of custom spaghetti when a 3-line harness exists.
+    </text>
+  </g>
+
+  <!-- ==================== LEFT CARD: ANTI-PATTERN ==================== -->
+  <g transform="translate(45, 155)">
+    <!-- Card Frame -->
+    <rect width="470" height="280" rx="12" fill="url(#cardBg)" stroke="url(#antiBorder)" stroke-width="1.2"/>
+    
+    <!-- Window Header -->
+    <rect width="470" height="38" rx="12" fill="rgba(239, 68, 68, 0.08)"/>
+    <rect y="37" width="470" height="1" fill="rgba(239, 68, 68, 0.2)"/>
+    
+    <!-- Window Control Dots -->
+    <circle cx="22" cy="19" r="5" fill="#EF4444" opacity="0.8"/>
+    <circle cx="36" cy="19" r="5" fill="#EF4444" opacity="0.3"/>
+    <circle cx="50" cy="19" r="5" fill="#EF4444" opacity="0.3"/>
+    
+    <!-- Header Title -->
+    <text x="70" y="23" fill="#FCA5A5" font-size="12" font-weight="700" class="font-mono">✕ WITHOUT RULEBOOK (ANTI-PATTERNS)</text>
+
+    <!-- Terminal Code Body -->
+    <g class="font-mono" font-size="11.5">
+      <!-- Section 1: Mountain-Herb Fallacy -->
+      <text x="22" y="65" fill="#64748B">// 1. Mountain-Herb Fallacy (Reinventing wheels):</text>
+      <text x="22" y="85" fill="#F87171">&gt; Hand-rolls 400 lines custom FFT DSP byte math</text>
+      <text x="22" y="105" fill="#F87171">&gt; 800 lines brittle ffmpeg &amp; tokenizer spaghetti</text>
+
+      <!-- Section 2: Spineless Sycophancy -->
+      <text x="22" y="135" fill="#64748B">// 2. Spineless Sycophancy (No intellectual spine):</text>
+      <text x="22" y="155" fill="#CBD5E1">User: "Run 5k headless Chrome every 10 mins"</text>
+      <text x="22" y="175" fill="#FCA5A5">Agent: "Brilliant idea! I apologize, you're right!"</text>
+
+      <!-- Section 3: Zombie Scrap -->
+      <text x="22" y="205" fill="#64748B">// 3. The Ghost Connector (Zombie scrap):</text>
+      <text x="22" y="225" fill="#EF4444">&gt; Migrated auth; leaves dead 'zerino.py' in repo</text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <rect y="246" width="470" height="34" rx="12" fill="rgba(239, 68, 68, 0.05)"/>
+    <rect y="245" width="470" height="1" fill="rgba(239, 68, 68, 0.15)"/>
+    <text x="22" y="267" fill="#EF4444" font-size="11" font-weight="600" class="font-mono">⚠ 1,200+ LINES SPAGHETTI · PASSIVE YES-MAN · ZOMBIE CODE</text>
+  </g>
+
+  <!-- ==================== CENTER ENGINE / TRANSFORM BRIDGE ==================== -->
+  <g class="floating-core">
+    <!-- Connecting Laser Stream (Left to Center) -->
+    <line x1="515" y1="295" x2="560" y2="295" stroke="#EF4444" stroke-width="2" class="stream-line" opacity="0.6"/>
+    
+    <!-- Connecting Laser Stream (Center to Right) -->
+    <line x1="640" y1="295" x2="685" y2="295" stroke="#10B981" stroke-width="2.5" class="stream-line"/>
+
+    <!-- Central Shield / Core Node -->
+    <circle cx="600" cy="295" r="38" fill="#0F172A" stroke="url(#standardBorder)" stroke-width="2"/>
+    <circle cx="600" cy="295" r="32" fill="#0B132B" opacity="0.9"/>
+    
+    <!-- Shield / Book Icon -->
+    <g transform="translate(588, 281)" stroke="#38BDF8" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      <path d="M9 12l2 2 4-4" stroke="#10B981"/>
+    </g>
+
+    <!-- Node Labels -->
+    <text x="600" y="348" fill="#94A3B8" font-size="10.5" font-weight="700" text-anchor="middle" class="font-sans" letter-spacing="0.8">CORE ENGINE</text>
+    <rect x="562" y="356" width="76" height="18" rx="9" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.4)"/>
+    <text x="600" y="369" fill="#34D399" font-size="9.5" font-weight="700" text-anchor="middle" class="font-mono">6 PILLARS</text>
+  </g>
+
+  <!-- ==================== RIGHT CARD: AGENTIC STANDARD ==================== -->
+  <g transform="translate(685, 155)">
+    <!-- Card Frame -->
+    <rect width="470" height="280" rx="12" fill="url(#cardBg)" stroke="url(#standardBorder)" stroke-width="1.4"/>
+    
+    <!-- Window Header -->
+    <rect width="470" height="38" rx="12" fill="rgba(16, 185, 129, 0.08)"/>
+    <rect y="37" width="470" height="1" fill="rgba(16, 185, 129, 0.2)"/>
+    
+    <!-- Window Control Dots -->
+    <circle cx="22" cy="19" r="5" fill="#10B981"/>
+    <circle cx="36" cy="19" r="5" fill="#06B6D4"/>
+    <circle cx="50" cy="19" r="5" fill="#6366F1"/>
+    
+    <!-- Header Title -->
+    <text x="70" y="23" fill="#6EE7B7" font-size="12" font-weight="700" class="font-mono">✓ WITH RULEBOOK (AGENTIC STANDARD)</text>
+    
+    <!-- Auto-Enforced Tag -->
+    <rect x="352" y="10" width="102" height="18" rx="9" fill="rgba(16, 185, 129, 0.15)" stroke="rgba(16, 185, 129, 0.5)"/>
+    <circle cx="363" cy="19" r="3.5" fill="#10B981" class="live-dot"/>
+    <text x="373" y="23" fill="#A7F3D0" font-size="9.5" font-weight="700" class="font-mono">AUTO-ACTIVE</text>
+
+    <!-- Terminal Code Body -->
+    <g class="font-mono" font-size="11.5">
+      <!-- Section 1: Lego-Block Synthesis -->
+      <text x="22" y="65" fill="#64748B">// 1. Lego-Block Synthesis (Medicine on the shelf):</text>
+      <text x="22" y="85" fill="#34D399">import auditok, whisper_timestamped, moviepy</text>
+      <text x="22" y="105" fill="#6EE7B7">&gt; 38 lines of clean orchestration glue (zero math)</text>
+
+      <!-- Section 2: Socratic Sparring -->
+      <text x="22" y="135" fill="#64748B">// 2. Socratic Sparring (Destination &gt; Vehicle):</text>
+      <text x="22" y="155" fill="#E2E8F0">Agent: "Chrome cron crashes server with 60GB RAM.</text>
+      <text x="22" y="175" fill="#38BDF8">        Path B (direct HTTP API) saves 98% memory."</text>
+
+      <!-- Section 3: Active Scrap Audit -->
+      <text x="22" y="205" fill="#64748B">// 3. Active Scrap Audit (Zero zombie code):</text>
+      <text x="22" y="225" fill="#A7F3D0">Agent: "Auth migrated. May I purge dead zerino.py?" <tspan fill="#34D399" class="cursor">█</tspan></text>
+    </g>
+
+    <!-- Bottom Status Bar -->
+    <rect y="246" width="470" height="34" rx="12" fill="rgba(16, 185, 129, 0.06)"/>
+    <rect y="245" width="470" height="1" fill="rgba(16, 185, 129, 0.2)"/>
+    <text x="22" y="267" fill="#34D399" font-size="11" font-weight="600" class="font-mono">⚡ ~40 LINES GLUE · SOCRATIC SPINE · PRISTINE REPO</text>
+  </g>
+
+  <!-- ==================== BOTTOM PLATFORM BADGES ==================== -->
+  <g transform="translate(180, 462)" class="font-mono" font-size="11">
+    <text x="40" y="20" fill="#64748B" font-size="11" font-weight="600" class="font-sans">COMPATIBLE WITH:</text>
+    
+    <!-- Claude Code -->
+    <g transform="translate(160, 4)">
+      <rect width="100" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="50" y="16" fill="#E2E8F0" text-anchor="middle">Claude Code</text>
+    </g>
+
+    <!-- Cursor -->
+    <g transform="translate(270, 4)">
+      <rect width="75" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="37.5" y="16" fill="#E2E8F0" text-anchor="middle">Cursor</text>
+    </g>
+
+    <!-- Windsurf -->
+    <g transform="translate(355, 4)">
+      <rect width="85" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="42.5" y="16" fill="#E2E8F0" text-anchor="middle">Windsurf</text>
+    </g>
+
+    <!-- Copilot -->
+    <g transform="translate(450, 4)">
+      <rect width="75" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="37.5" y="16" fill="#E2E8F0" text-anchor="middle">Copilot</text>
+    </g>
+
+    <!-- Antigravity -->
+    <g transform="translate(535, 4)">
+      <rect width="95" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="47.5" y="16" fill="#E2E8F0" text-anchor="middle">Antigravity</text>
+    </g>
+
+    <!-- Cline -->
+    <g transform="translate(640, 4)">
+      <rect width="65" height="24" rx="6" fill="rgba(255, 255, 255, 0.04)" stroke="rgba(255, 255, 255, 0.1)"/>
+      <text x="32.5" y="16" fill="#E2E8F0" text-anchor="middle">Cline</text>
+    </g>
+  </g>
+</svg>

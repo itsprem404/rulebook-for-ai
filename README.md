@@ -1,8 +1,14 @@
-# Rulebook for AI (`rulebook-for-ai`)
+<p align="center">
+  <img src="assets/readme/hero.svg" alt="Rulebook for AI - The Agentic Engineering Standard" width="100%">
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Repository](https://img.shields.io/badge/GitHub-itsprem404%2Frulebook--for--ai-181717.svg?logo=github)](https://github.com/itsprem404/rulebook-for-ai)
-[![Universal Compatibility](https://img.shields.io/badge/Agents-Universal%20Standard-emerald.svg)](#quick-setup)
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  &nbsp;
+  <a href="https://github.com/itsprem404/rulebook-for-ai"><img src="https://img.shields.io/badge/GitHub-itsprem404%2Frulebook--for--ai-181717.svg?logo=github" alt="GitHub Repository"></a>
+  &nbsp;
+  <a href="#quick-setup-for-developers"><img src="https://img.shields.io/badge/Agents-Universal%20Standard-emerald.svg" alt="Universal Standard"></a>
+</p>
 
 > **Stop AI coding agents from hand-rolling 1,200 lines of custom spaghetti when a 3-line harness exists, and leaving zombie scrap files in your repository.**
 
@@ -96,6 +102,9 @@ rulebook-for-ai/
 ├── .cursor/
 │   └── rules/
 │       └── rulebook-for-ai.mdc        # Cursor IDE rulebook configuration
+├── assets/
+│   └── readme/
+│       └── hero.svg                   # Animated README hero banner
 ├── rules/
 │   └── AGENTS.md                      # Auto-enforced background agent rules
 ├── skills/
